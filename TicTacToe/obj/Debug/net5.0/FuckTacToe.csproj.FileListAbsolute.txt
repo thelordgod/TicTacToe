@@ -1,0 +1,16 @@
+C:\Users\alus\RiderProjects\TicTacToe\FuckTacToe\bin\Debug\net5.0\FuckTacToe.exe
+C:\Users\alus\RiderProjects\TicTacToe\FuckTacToe\bin\Debug\net5.0\FuckTacToe.deps.json
+C:\Users\alus\RiderProjects\TicTacToe\FuckTacToe\bin\Debug\net5.0\FuckTacToe.runtimeconfig.json
+C:\Users\alus\RiderProjects\TicTacToe\FuckTacToe\bin\Debug\net5.0\FuckTacToe.runtimeconfig.dev.json
+C:\Users\alus\RiderProjects\TicTacToe\FuckTacToe\bin\Debug\net5.0\FuckTacToe.dll
+C:\Users\alus\RiderProjects\TicTacToe\FuckTacToe\bin\Debug\net5.0\ref\FuckTacToe.dll
+C:\Users\alus\RiderProjects\TicTacToe\FuckTacToe\bin\Debug\net5.0\FuckTacToe.pdb
+C:\Users\alus\RiderProjects\TicTacToe\FuckTacToe\obj\Debug\net5.0\FuckTacToe.csprojAssemblyReference.cache
+C:\Users\alus\RiderProjects\TicTacToe\FuckTacToe\obj\Debug\net5.0\FuckTacToe.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alus\RiderProjects\TicTacToe\FuckTacToe\obj\Debug\net5.0\FuckTacToe.AssemblyInfoInputs.cache
+C:\Users\alus\RiderProjects\TicTacToe\FuckTacToe\obj\Debug\net5.0\FuckTacToe.AssemblyInfo.cs
+C:\Users\alus\RiderProjects\TicTacToe\FuckTacToe\obj\Debug\net5.0\FuckTacToe.csproj.CoreCompileInputs.cache
+C:\Users\alus\RiderProjects\TicTacToe\FuckTacToe\obj\Debug\net5.0\FuckTacToe.dll
+C:\Users\alus\RiderProjects\TicTacToe\FuckTacToe\obj\Debug\net5.0\ref\FuckTacToe.dll
+C:\Users\alus\RiderProjects\TicTacToe\FuckTacToe\obj\Debug\net5.0\FuckTacToe.pdb
+C:\Users\alus\RiderProjects\TicTacToe\FuckTacToe\obj\Debug\net5.0\FuckTacToe.genruntimeconfig.cache
