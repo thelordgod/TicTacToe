@@ -47,13 +47,21 @@ namespace TicTacToe
                     case 9:
                         ProcessField(result);
                         break;
+                    case 0:
+                        HandleInvalidInput();
+                        break;
                 }
             }
             else
             {
-                Console.WriteLine("Invalid input. Try again.");
-                ReadMove();
+                HandleInvalidInput();
             }
+        }
+
+        private static void HandleInvalidInput(string message = "Invalid input. Try again.")
+        {
+            Console.WriteLine(message);
+            ReadMove();
         }
 
         private static void ProcessField(int inputKey)
@@ -67,8 +75,7 @@ namespace TicTacToe
             }
             else
             {
-                Console.WriteLine("Field already occupied!");
-                ReadMove();
+                HandleInvalidInput("Field already occupied!");
             }
         }
 
