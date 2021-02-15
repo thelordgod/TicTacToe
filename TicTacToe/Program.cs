@@ -108,7 +108,6 @@ namespace TicTacToe
 
     internal class Board
     {
-        public Status Status { get; set; }
         public readonly Dictionary<int, Status> squareStatus = new Dictionary<int, Status>()
         {
             { 1, Status.Empty},
