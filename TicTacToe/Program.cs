@@ -12,7 +12,7 @@ namespace TicTacToe
         static void Main()
         {
             bool isWinner = false;
-            
+
             do
             {
                 DrawBoard();
@@ -37,14 +37,9 @@ namespace TicTacToe
 
         private static void ChangeField(ConsoleKeyInfo input)
         {
-            if (int.TryParse(input.Key.ToString().Remove(0, 1), out int result))
-            {
-                if (result >= 1 && result <= 9)
-                    ProcessField(result);
-                else
-                    HandleInvalidInput();
-
-            }
+            var digit = int.TryParse(input.Key.ToString().Remove(0, 1), out int result);
+            if (result >= 1 && result <= 9)
+                ProcessField(result);
             else
                 HandleInvalidInput();
         }
@@ -108,15 +103,15 @@ namespace TicTacToe
     {
         public readonly Dictionary<int, Status> squareStatus = new Dictionary<int, Status>()
         {
-            { 1, Status.Empty},
-            { 2, Status.Empty},
-            { 3, Status.Empty},
-            { 4, Status.Empty},
-            { 5, Status.Empty},
-            { 6, Status.Empty},
-            { 7, Status.Empty},
-            { 8, Status.Empty},
-            { 9, Status.Empty}
+            {1, Status.Empty},
+            {2, Status.Empty},
+            {3, Status.Empty},
+            {4, Status.Empty},
+            {5, Status.Empty},
+            {6, Status.Empty},
+            {7, Status.Empty},
+            {8, Status.Empty},
+            {9, Status.Empty}
         };
     }
 
