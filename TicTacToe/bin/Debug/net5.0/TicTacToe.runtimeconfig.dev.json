@@ -1,9 +1,9 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
-      "C:\\Users\\alus\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\alus\\.nuget\\packages",
-      "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      "C:\\Users\\kasgeo\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\kasgeo\\.nuget\\packages",
+      "C:\\Microsoft\\Xamarin\\NuGet"
     ]
   }
 }

@@ -4,23 +4,28 @@ using System.Text;
 
 namespace TicTacToe
 {
-    class Program
+    internal static class Program
     {
         private static readonly Board _board = new Board();
         private static Player _currentPlayer = Player.One;
 
-        static void Main(string[] args)
+        static void Main()
         {
             bool isWinner = false;
             
-            DrawBoard();
-            while (!isWinner)
+            do
             {
+                DrawBoard();
                 ReadMove();
                 Console.WriteLine();
-                DrawBoard();
                 _currentPlayer = _currentPlayer == Player.One ? Player.Two : Player.One;
-            }
+            } while (!isWinner);
+        }
+
+        private static bool GetWinner()
+        {
+            // TODO: implement win logic
+            return false;
         }
 
         private static void ReadMove()
@@ -34,28 +39,14 @@ namespace TicTacToe
         {
             if (int.TryParse(input.Key.ToString().Remove(0, 1), out int result))
             {
-                switch (result)
-                {
-                    case 1:
-                    case 2:
-                    case 3:
-                    case 4:
-                    case 5:
-                    case 6:
-                    case 7:
-                    case 8:
-                    case 9:
-                        ProcessField(result);
-                        break;
-                    case 0:
-                        HandleInvalidInput();
-                        break;
-                }
+                if (result >= 1 && result <= 9)
+                    ProcessField(result);
+                else
+                    HandleInvalidInput();
+
             }
             else
-            {
                 HandleInvalidInput();
-            }
         }
 
         private static void HandleInvalidInput(string message = "Invalid input. Try again.")
