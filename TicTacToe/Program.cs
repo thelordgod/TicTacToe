@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using static System.Int32;
 
 namespace TicTacToe
 {
@@ -37,11 +38,13 @@ namespace TicTacToe
 
         private static void ChangeField(ConsoleKeyInfo input)
         {
-            var digit = int.TryParse(input.Key.ToString().Remove(0, 1), out int result);
+            TryParse(input.Key.ToString().Remove(0, 1), out int result);
             if (result >= 1 && result <= 9)
+            {
                 ProcessField(result);
-            else
-                HandleInvalidInput();
+                return;
+            }
+            HandleInvalidInput();
         }
 
         private static void HandleInvalidInput(string message = "Invalid input. Try again.")
@@ -58,11 +61,9 @@ namespace TicTacToe
                     _currentPlayer == Player.One
                         ? Status.PlayerOne
                         : Status.PlayerTwo;
+                return;
             }
-            else
-            {
-                HandleInvalidInput("Field already occupied!");
-            }
+            HandleInvalidInput("Field already occupied!");
         }
 
         private static void DrawBoard()
